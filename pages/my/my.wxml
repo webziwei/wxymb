@@ -1,0 +1,15 @@
+<view class="info">
+<image src="{{avatarUrl}}"></image>
+<view class='name'>
+<text>{{nickName}}</text>
+</view>
+
+</view>
+<view class='tab_list'>
+      <view class='tab_item' bindtap='order'>我的订单</view>
+      <view class='tab_item'>联系客服</view>
+      <view class='tab_item'>关于我们</view>
+</view>
+<view class='foot_out'>
+退出
+</view>

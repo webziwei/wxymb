@@ -1,0 +1,12 @@
+<view class='movie_item' wx:for="{{movielist}}" wx:key="{{index}}">
+<view class='img_l'>
+<image src="{{item.img}}" mode="widthFix"></image>
+</view>
+<view class='content_r'>
+      <view>电影名：{{item.title}}</view>
+      <view>主演：{{item.actors}}</view>
+      <view>导演：{{item.director}}</view>
+      <view>时长：{{item.duration?item.duration:'未知'}}</view>
+      <view>上映地点：{{item.region}}</view>
+</view>
+</view>

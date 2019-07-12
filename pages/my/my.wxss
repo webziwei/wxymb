@@ -1,0 +1,45 @@
+.info{
+      width:100%;
+      padding:10px;
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 10px;
+}
+.info image{
+      display: block;
+      width:80px;
+      height:80px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin:0 auto;
+      margin-bottom:10px;
+      
+}
+.info .name{
+      color:#999;
+}
+.tab_list{
+      width:100%;
+      border-top:1px solid #EAEAEA;
+      background-color: #fff;
+      margin-bottom:10px;
+}
+.tab_list .tab_item{
+      padding-left:10px;
+      font-size: 14px;
+      line-height: 40px;
+      height:40px;
+      color:#000;
+      border-bottom:1px solid #EAEAEA;
+}
+.foot_out{
+      text-align: center;
+      font-size: 14px;
+      line-height: 40px;
+      height:40px;
+      color:#000;
+      border-bottom:1px solid #EAEAEA;
+      border-top:1px solid #EAEAEA;
+      background-color: #fff;
+
+}

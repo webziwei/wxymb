@@ -1,0 +1,131 @@
+.car_box{
+      width:100%;
+      height:100%;
+}
+/* 商品栏 start */
+.car_box .car_con{
+      width:100%;
+      height:250rpx;
+      box-sizing: border-box;
+      border-bottom:1px solid #ccc;
+      background-color: #fff;
+      overflow: hidden;
+}
+.car_box .car_con .check-box{
+      height:100%;
+      padding-left:5px;
+      float: left;
+}
+.car_box .car_con .check-box .check{
+      width:30px;
+      height:30px;    
+      margin-top:38px;
+      border-radius:50%;
+}
+.car_box .car_con .car_img{
+      width:80px;
+      height:80px;
+      float:left;
+      margin-top: 10px;
+}
+.car_box .car_con .car_img image{
+      width:80px;
+      height:80px;
+}
+.car_box .car_con .car_r{
+      padding:10px 0;
+      font-size: 12px;
+      width:calc(100% - 115px);
+      float:left;
+}
+.car_box .car_con .car_r .shop_name{
+      font-size: 12px;
+      height:40px;
+}
+.car_box .car_con .car_r .price{
+overflow: hidden;
+margin-bottom:10px;
+}
+.car_box .car_con .car_r .shop_price{
+      color:red;
+      float: left;
+      font-size: 14px;
+      margin-right:10px;
+}
+.car_box .car_con .car_r .shop_hotsprice{
+      font-size: 12px;
+      color:#ccc;
+      text-decoration: line-through;
+}
+.car_box .car_con .car_r .foot{
+      width:100%;
+}
+.car_box .car_con .car_r .shop_num{
+      border:1px solid #ccc;
+      border-right:0;
+      height:20px;
+      float: left;
+}
+.car_box .car_con .car_r .shop_num>view{
+      float:left;
+      width:20px;
+      height:20px;
+      line-height: 20px;
+      border-right:1px solid #ccc;
+      text-align: center;
+
+}
+.car_box .car_con .car_r .shop_num .num{
+      width:40px;
+}
+.car_box .car_con .car_r   .del{
+      float: right;
+      margin-right: 5px;
+      
+}
+.car_box .car_con .car_r  .del image{
+ width:20px;
+ height:20px;
+}
+/* 商品栏 end */
+
+/*底部栏 start*/
+.car_box .foot_submit{
+      width:100%;
+      height:40px;
+      line-height: 40px;
+      background-color: #fff;
+      position: fixed;
+      bottom:-1px;
+      left:0;
+      border-bottom:1px solid #ccc;
+      font-size:12px;
+      overflow: hidden;
+}
+.car_box .foot_submit .all_check{
+      float:left;
+      margin-left:10px;
+}
+.car_box .foot_submit .foot_text{
+      float:left;
+}
+.car_box .foot_submit .text{
+      margin-left: 10px;
+}
+.car_box .foot_submit .text text{
+      color:#ff0000;
+}
+.car_box .foot_submit  .submit{
+      position:absolute;
+      right:10px;
+      bottom:7px;
+      width:70px;
+      height:26px;
+      line-height: 26px;
+      text-align: center;
+      color:#fff;
+      border-radius:2px;
+      background-color:#69C3AA;
+}
+/*底部栏 end*/
+

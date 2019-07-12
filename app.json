@@ -1,0 +1,50 @@
+{
+      "pages": [
+            "pages/index/index",
+            "pages/order/order",
+            "pages/activity/activity",
+            "pages/shopcar/shopcar",
+            "pages/details/details",
+            "pages/my/my",
+            "pages/logs/logs"
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#69C3AA",
+            "navigationBarTitleText": "库购",
+            "navigationBarTextStyle": "white"
+      },
+      "tabBar": {
+            "color": "#929292",
+            "selectedColor": "#69c3aa",
+            "borderStyle": "white",
+            "backgroundColor": "#ffffff",
+            "list": [
+                  {
+                        "pagePath": "pages/index/index",
+                        "iconPath": "image/shouye1.png",
+                        "selectedIconPath": "image/shouye.png",
+                        "text": "首页"
+                  },
+                  {
+                        "pagePath": "pages/activity/activity",
+                        "iconPath": "image/faxian1.png",
+                        "selectedIconPath": "image/faxian.png",
+                        "text": "休闲一刻"
+                  },
+                  {
+                        "pagePath": "pages/shopcar/shopcar",
+                        "iconPath": "image/car1.png",
+                        "selectedIconPath": "image/car.png",
+                        "text": "装备库"
+                  },
+                  {
+                        "pagePath": "pages/my/my",
+                        "iconPath": "image/wode1.png",
+                        "selectedIconPath": "image/wode.png",
+                        "text": "我的"
+                  }
+            ]
+      },
+      "sitemapLocation": "sitemap.json"
+}

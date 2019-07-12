@@ -1,0 +1,18 @@
+<!--pages/order/order.wxml-->
+<view class='order_box' wx:for="{{orderList}}" wx:for-item="i" wx:key="{{index}}">
+      <view class='title'>
+      {{i.oid}}
+      <view class='time'>{{i.time}}</view>
+      </view>
+      <view class="shop_i" wx:for="{{i.shoporder}}" wx:for-item="j" wx:key="{{index}}">
+            <view class='img_l'>
+                  <image src='{{j.shopsImage}}'></image>
+            </view>
+            <view class='text_r'>
+                  <view class='up'>{{j.shopsName}}</view>
+                  <view class="down">x{{j.shopsCount}}</view>          
+            </view>
+      </view>
+      <view class="all_price">￥:{{i.price}}</view>
+</view>
+<view  class="btn" bindtap='jumpmy'>返回</view>

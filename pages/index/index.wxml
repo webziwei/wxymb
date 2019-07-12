@@ -1,0 +1,62 @@
+<!--轮播图开始-->
+<view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <!-- <block wx:for="{{background}}" wx:key="*this"> -->
+            <block wx:for="{{imageFor}}" wx:key="{{index}}">
+                  <swiper-item>
+                        <!-- <view class="swiper-item {{item}}"></view> -->
+                        <view class="image_style">
+                              <image src='{{item.img}}' mode="widthFix"></image>
+                        </view>
+                  </swiper-item>
+            </block>
+
+      </swiper>
+</view>
+<!-- 轮播图end -->
+<!-- 分类 -->
+<view class="page-section page-section-spacing swiper">
+      <view class="top_info my_title">库球员</view>
+      <swiper class="tabSwiper">
+            <swiper-item wx:for="{{balllist}}" wx:key="{{index}}">
+                  <view class='ball_item'>
+                        <view class='img_l'>
+                              <image src="{{item.img}}" mode="widthFix"></image>
+                        </view>
+                        <view class='content_r'>
+                              <view>球员：{{item.name}}</view>
+                              <view>号码：{{item.num}}</view>
+                              <view>生日：{{item.day}}</view>
+                              <view>身高：{{item.tall}}</view>
+                              <view>位置：{{item.address}}</view>
+                        </view>
+                  </view>
+            </swiper-item>
+      </swiper>
+</view>
+<!-- 分类end -->
+<view class='shop_like'>
+      <view class='like_title my_title'>
+            <text>库装备</text>
+      </view>
+
+
+      <view class='shop_item' wx:for="{{shopList}}" wx:key="{{index}}" data-shopId='{{item.shopId}}' bindtap='jumpDetails'>
+
+            <view class='shop_img'>
+                  <image src='{{item.shopImage}}'></image>
+            </view>
+            <view class='shop_con'>
+                  <view class='shop_name'>{{item.shopName}}</view>
+                  <view class='shop_addres'>{{item.shopAddres}}</view>
+                  <view class='shop_price'>￥{{item.shopPrice}}</view>
+
+            </view>
+            <view class='shop_car'>
+                  <image src='../../image/car.png'></image>
+            </view>
+
+      </view>
+      <!-- </navigator> -->
+
+</view>

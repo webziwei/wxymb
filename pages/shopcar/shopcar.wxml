@@ -1,0 +1,45 @@
+<view class="car_box">
+      <view class='car_con' wx:for="{{shopcarList}}" wx:key='{{index}}'>
+            <view class="check-box">
+                  <checkbox data-alpha="{{index}}" class="check" checked="{{item.checked}}" color='#666' bindtap='selectShop' />
+                  <!-- <input type='radio'  class="check"></input> -->
+            </view>
+            <view class='car_img'>
+                  <image src='{{item.shopsImage}}'></image>
+            </view>
+            <view class='car_r'>
+                  <view class='shop_name'>{{item.shopsName}}</view>
+                  <view class='price'>
+                        <view class='shop_price'>￥{{item.shopsPrice}}</view>
+                        <view class='shop_hotsprice'>￥{{item.oldPrice}}</view>
+
+                  </view>
+                  <view class='foot'>
+                        <view class='shop_num'>
+                              <view class='jian' bindtap='jian' data-aaa='{{index}}'>-</view>
+                              <view class="num">{{item.shopsCount}}</view>
+                              <view class='jia' bindtap='jia' data-aaa='{{index}}'>+</view>
+
+                        </view>
+                        <view class='del'>
+                              <image src='../../image/shanchu.png' bindtap='del' data-aaa="{{index}}"></image>
+                        </view>
+                  </view>
+
+            </view>
+
+      </view>
+
+      <view class='foot_submit'>
+            <checkbox class="all_check" checked="{{allCheck}}" color='#666' bindtap='allselect' />
+            <view class='foot_text'>
+                  <view class='text'>
+                        总价:
+                        <text>￥{{carPrice}}</text>
+                  </view>
+                  <view class='submit' bindtap='order'>下单</view>
+            </view>
+      </view>
+
+     
+</view>

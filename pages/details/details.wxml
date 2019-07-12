@@ -1,0 +1,38 @@
+<!--轮播图开始-->
+<view class="page-section page-section-spacing swiper">
+      <swiper style='height:{{height}}px;' indicator-dots="{{indicatorDots}}">
+            <!-- <block wx:for="{{background}}" wx:key="*this"> -->
+            <block wx:for="{{imageFor}}" wx:key="{{index}}">
+                  <swiper-item>
+                        <!-- <view class="swiper-item {{item}}"></view> -->
+                        <image  src='{{shopsDetailData.shopImage}}' class="image_style" mode='widthFix' bindload='imgloaded'></image>
+                  </swiper-item>
+            </block>
+
+      </swiper>
+</view>
+<!-- 轮播图end -->
+<view class='info_top'>
+      <view class='shop_title'>{{shopsDetailData.shopName}}</view>
+      <view class='shop_price'>
+            <text class='new_price'>{{shopsDetailData.shopPrice}}</text>
+            <text class='old_price'>{{shopsDetailData.oldPrice}}</text>
+      </view>
+</view>
+
+
+<view class='shop_pic'>
+<view class='tilte'>商品详情</view>
+<image src='../../image/detail.jpg' mode='widthFix'></image>
+</view>
+<!-- 底部导航 -->
+<view class='foot_nav'>
+<view class='btn btn1 ' bindtap='jumpcar'>
+      <view class='icon'>
+      <image src='../../image/car.png'></image>
+      <!-- <text>{{carNum}}</text> -->
+      </view>
+</view>
+<view class='btn btn2' bindtap="junmpindex" >前往首页</view>
+<view class='btn btn3' bindtap='addcar'>加入购物车</view>
+</view>

@@ -1,0 +1,134 @@
+.image_style {
+      position: relative;
+      width: 100%;
+      height: 360rpx;
+      overflow: hidden;
+}
+
+.image_style image {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+}
+
+swiper {
+      height: 380rpx;
+}
+
+/* swiper.tabSwiper {
+      height: 150px;
+} */
+
+/* 分类 */
+.top_info{
+      background-color: #fff;
+}
+
+.ball_item{
+     display: flex;
+     padding: 10px;
+     background-color: #474242;
+     margin-bottom:10rpx;
+}
+ .ball_item .img_l{
+            flex:4;
+            /* text-align: center; */
+}
+.ball_item .img_l image{
+      border-radius: 10rpx;
+      width:80%
+}
+.ball_item .content_r{
+     flex:6;
+}
+.ball_item .content_r view{ 
+    font-size: 30rpx;
+    color:#999;
+    line-height:65rpx; 
+
+}
+/* 分类end */
+
+/* 猜你喜欢 */
+
+.shop_like {
+      margin-top: 10px;
+      width: 100%;
+      /* background-color: #fff; */
+}
+
+.shop_like .like_title {
+      background-color: #fff;
+
+}
+
+.shop_like .like_title text {
+      font-size: 16px;
+}
+
+.shop_item {
+      width: 100%;
+      padding-left: 100px;
+      position: relative;
+      /* margin-top: 10px; */
+      border-bottom:1px dashed #ddd;
+      box-sizing: border-box;
+      background-color: #fff;
+      height:100px;
+      padding-top: 10px;
+
+}
+
+.shop_item .shop_img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+}
+
+.shop_item .shop_img image {
+      width: 80px;
+      height: 80px;
+}
+
+.shop_item .shop_con {
+}
+
+.shop_item .shop_con .shop_name {
+      font-size: 16px;
+      padding-right: 10px;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #515151;
+}
+
+.shop_item .shop_con .shop_addres {
+      font-size: 12px;
+      color: #aabdd8;
+}
+
+.shop_item .shop_con .shop_price {
+      font-size: 14px;
+      color: orangered;
+      margin-top: 5px;
+}
+
+.shop_item  .shop_car {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+}
+
+.shop_item  .shop_car image {
+      width: 20px;
+      height: 20px;
+}
+
+/* 猜你喜欢 end */

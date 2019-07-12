@@ -1,0 +1,23 @@
+.movie_item{
+     display: flex;
+     padding: 10px;
+     background-color: #fff;
+     margin-bottom:10rpx;
+}
+ .movie_item .img_l{
+            flex:4;
+            /* text-align: center; */
+}
+.movie_item .img_l image{
+      border-radius: 10rpx;
+      width:80%
+}
+.movie_item .content_r{
+     flex:6;
+}
+.movie_item .content_r view{ 
+    font-size: 30rpx;
+    color:#999;
+    line-height:50rpx; 
+
+}
